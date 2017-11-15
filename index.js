@@ -5,6 +5,6 @@ const config = require('./config')
 
 app.use(express.static(path.join(__dirname, 'public')))
 
-app.listen(config.host, config.port, () => {
+app.listen(config.port, () => {
   console.log(`Server is running at localhost: ${config.port}`)
 })
